@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap - Learn, Teach, and Connect</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/api.js" defer></script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .heading {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-indigo-600">SkillSwap</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#how-it-works" class="text-gray-600 hover:text-indigo-600">How It Works</a>
+                    <a href="#skills" class="text-gray-600 hover:text-indigo-600">Skills</a>
+                    <a href="#stories" class="text-gray-600 hover:text-indigo-600">Stories</a>
+                    <a href="#events" class="text-gray-600 hover:text-indigo-600">Events</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-indigo-600">Pricing</a>
+                    <a href="#contact" class="text-gray-600 hover:text-indigo-600">Contact</a>
+                    <a href="sign-up.html" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="heading text-5xl md:text-6xl font-bold text-white mb-6">
+                Learn, Teach, and Connect
+            </h1>
+            <p class="text-xl md:text-2xl text-white mb-8">
+                Join our community of passionate learners and teachers
+            </p>
+            <a href="sign-up.html" class="bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition duration-300">
+                Join the Community
+            </a>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="heading text-4xl font-bold text-center mb-16">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-plus text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Sign Up</h3>
+                    <p class="text-gray-600">Create your profile and list the skills you want to learn or teach</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-search text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Find Matches</h3>
+                    <p class="text-gray-600">Connect with others who have complementary skills</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Start Learning</h3>
+                    <p class="text-gray-600">Exchange skills and grow together through mutual learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="heading text-4xl font-bold text-center mb-16">Popular Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Programming" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Programming</h3>
+                        <p class="text-gray-600">Web development, mobile apps, and more</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/3771074/pexels-photo-3771074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Languages" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Languages</h3>
+                        <p class="text-gray-600">Learn new languages from native speakers</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/3755755/pexels-photo-3755755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Arts & Crafts" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Arts & Crafts</h3>
+                        <p class="text-gray-600">Painting, drawing, and handicrafts</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fitness" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Fitness</h3>
+                        <p class="text-gray-600">Personal training and workout routines</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Stories Section -->
+    <section id="stories" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="heading text-4xl font-bold text-center mb-16">Community Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sarah" class="w-16 h-16 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Sarah Johnson</h3>
+                            <p class="text-gray-600">Web Developer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Through SkillSwap, I learned Spanish while teaching web development. It's amazing how much you can learn when you connect with the right people!"</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Michael" class="w-16 h-16 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Michael Chen</h3>
+                            <p class="text-gray-600">Fitness Trainer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I've met incredible people who share my passion for fitness. Now I help others achieve their fitness goals while learning photography!"</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Emma" class="w-16 h-16 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">Emma Davis</h3>
+                            <p class="text-gray-600">Artist</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"SkillSwap helped me expand my artistic horizons. I now teach painting while learning digital marketing. It's a win-win!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="heading text-4xl font-bold text-center mb-16">Upcoming Events</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-2xl font-semibold mb-4">Local Meetups</h3>
+                    <div class="space-y-6">
+                        <div class="border-b pb-4">
+                            <h4 class="text-xl font-semibold mb-2">Coding Workshop</h4>
+                            <p class="text-gray-600 mb-2">Learn the basics of web development</p>
+                            <p class="text-indigo-600"><i class="far fa-calendar-alt mr-2"></i>June 15, 2024</p>
+                        </div>
+                        <div class="border-b pb-4">
+                            <h4 class="text-xl font-semibold mb-2">Art Exhibition</h4>
+                            <p class="text-gray-600 mb-2">Showcase your artistic talents</p>
+                            <p class="text-indigo-600"><i class="far fa-calendar-alt mr-2"></i>June 20, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-2xl font-semibold mb-4">Online Classes</h3>
+                    <div class="space-y-6">
+                        <div class="border-b pb-4">
+                            <h4 class="text-xl font-semibold mb-2">Digital Marketing Masterclass</h4>
+                            <p class="text-gray-600 mb-2">Learn from industry experts</p>
+                            <p class="text-indigo-600"><i class="far fa-clock mr-2"></i>Every Tuesday, 7 PM EST</p>
+                        </div>
+                        <div class="border-b pb-4">
+                            <h4 class="text-xl font-semibold mb-2">Language Exchange</h4>
+                            <p class="text-gray-600 mb-2">Practice conversations with native speakers</p>
+                            <p class="text-indigo-600"><i class="far fa-clock mr-2"></i>Every Thursday, 6 PM EST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="heading text-4xl font-bold text-center mb-16">Simple Pricing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="bg-gray-50 rounded-lg p-8 text-center">
+                    <h3 class="text-2xl font-semibold mb-4">Free Membership</h3>
+                    <p class="text-4xl font-bold mb-8">$0<span class="text-gray-600 text-lg">/month</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Basic Profile</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Connect with Users</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Join Events</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Community Access</li>
+                    </ul>
+                    <a href="sign-up.html" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition duration-300">Get Started</a>
+                </div>
+                <div class="bg-indigo-600 rounded-lg p-8 text-center text-white transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Premium Membership</h3>
+                    <p class="text-4xl font-bold mb-8">$9.99<span class="text-gray-200 text-lg">/month</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li><i class="fas fa-check mr-2"></i>All Free Features</li>
+                        <li><i class="fas fa-check mr-2"></i>Priority Matching</li>
+                        <li><i class="fas fa-check mr-2"></i>Advanced Search</li>
+                        <li><i class="fas fa-check mr-2"></i>Verified Badge</li>
+                        <li><i class="fas fa-check mr-2"></i>Featured Profile</li>
+                    </ul>
+                    <a href="sign-up.html" class="inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Upgrade Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="heading text-4xl font-bold text-center mb-16">Get in Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="name">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="email">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="message">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-indigo-600"></textarea>
+                        </div>
+                        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                        <p class="text-gray-600 mb-2"><i class="fas fa-envelope mr-2"></i>support@skillswap.com</p>
+                        <p class="text-gray-600 mb-2"><i class="fas fa-phone mr-2"></i>+1 (555) 123-4567</p>
+                        <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i>123 Skill Street, Learning City</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-indigo-600"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-indigo-600"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-indigo-600"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-indigo-600"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-indigo-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="heading text-4xl font-bold text-white mb-8">Stay Updated</h2>
+            <p class="text-xl text-white mb-8">Subscribe to our newsletter for the latest updates and community news</p>
+            <form class="max-w-md mx-auto flex gap-4">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg focus:outline-none">
+                <button type="submit" class="bg-white text-indigo-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">SkillSwap</h3>
+                    <p class="text-gray-400">Connecting people through shared learning experiences</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 SkillSwap. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
